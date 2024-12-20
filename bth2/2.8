@@ -1,0 +1,16 @@
+print('Nguyễn Trọng Hồng msv 235752021610046')
+def fibonacci_less_than_n(n):
+    fib_list = []
+    a, b = 0, 1
+    while b < n:
+        fib_list.append(b)
+        a, b = b, a + b
+    
+    fib_sum = sum(fib_list)
+    
+    print("Dãy số Fibonacci nhỏ hơn {}: {}".format(n, fib_list))
+    return fib_list, fib_sum
+
+fib_numbers, fib_sum = fibonacci_less_than_n(4000000)
+print("Tổng của dãy số là:", fib_sum)
+
